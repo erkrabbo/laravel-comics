@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    @include('header')
+    @include('statics.header')
+    @include('statics.jumbo')
+
+    @yield('main')
 </body>
 </html>
