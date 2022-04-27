@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    @include('statics.header')
-    @include('statics.jumbo')
+    @include('guest.statics.header')
+    @include('guest.statics.jumbo')
 
     @yield('main')
 </body>
