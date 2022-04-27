@@ -109,7 +109,7 @@ main {
 }
 
 main .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -137,7 +137,15 @@ main .container .series-view .card .overlay {
   color: white;
   background-color: black;
   width: 100%;
-  height: 2em;
+  height: 30%;
+}
+
+main button {
+  margin: 2em auto;
+  padding: 0.5em 4em;
+  background-color: blue;
+  color: white;
+  font-weight: 600;
 }
 
 main .label {

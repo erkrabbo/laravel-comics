@@ -17,6 +17,7 @@
                         </div>
                     </div>
                 @endforeach
+                <button>LOAD MORE</button>
             </div>
         </div>
     </main>
