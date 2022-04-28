@@ -18,4 +18,8 @@ Route::get('/', function () {
         'series' => config('comics')
     ];
     return view('guest.pages.comicsmain', $data);
-})->name('home');
+})->name('comics');
+
+Route::get('/characters', function () {
+    return view('guest.pages.characters');
+})->name('characters');

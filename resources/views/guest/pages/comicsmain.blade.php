@@ -21,4 +21,5 @@
             </div>
         </div>
     </main>
+    @include('guest.statics.bluebanner')
 @endsection

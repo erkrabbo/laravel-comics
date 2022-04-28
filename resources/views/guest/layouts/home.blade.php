@@ -14,5 +14,7 @@
     @include('guest.statics.jumbo')
 
     @yield('main')
+
+    @include('guest.statics.footer')
 </body>
 </html>

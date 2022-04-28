@@ -81,40 +81,41 @@
 
 
 .jumbo{
-    height: 50vh;
+    max-height: 50vh;
     img{
-       width: 100%;
-       max-height: 100%;
-       object-fit: cover;
-       object-position: top;
+        height: 50vh;
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: top;
     }
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 main{
     background-color: black;
-    .container{
-        max-width: 1000px;
-        margin: 0 auto;
-        .series-view{
-            flex-wrap: wrap;
-            .card{
-                padding: .2em;
-                width: calc(100% / 6);
-                .body{
-                    position: relative;
-                }
-                img{
-                    width: 100%;
-                }
-                .overlay{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    color: white;
-                    background-color: black;
-                    width: 100%;
-                    height: 30%;
-                }
+    .series-view{
+        flex-wrap: wrap;
+        .card{
+            padding: .2em;
+            width: calc(100% / 6);
+            .body{
+                position: relative;
+            }
+            img{
+                width: 100%;
+            }
+            .overlay{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: white;
+                background-color: black;
+                width: 100%;
+                height: 30%;
             }
         }
     }
@@ -133,5 +134,83 @@ main{
         font-weight: 600;
         padding: .5em;
         transform: translateY(-50%);
+    }
+}
+
+.bluebanner{
+    background-color: blue;
+    color: white;
+    padding: 1.5rem 0;
+    .img-container{
+        width: calc(100% / 5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .7rem;
+        padding: 1em;
+        img{
+            max-width: 30%;
+            max-height: 70%;
+            object-fit: contain;
+            margin-right: .5em;
+        }
+    }
+}
+
+footer{
+    background: no-repeat url('../images/footer-bg.jpg');
+    background-size: cover;
+    .top{
+        margin: 0 2em;
+        background: right/30% no-repeat url('../images/dc-logo-bg.png');
+        .container{
+            padding: 2rem 0;
+            ul{
+                list-style: none;
+                color: white;
+            }
+            a{
+                text-decoration: none;
+                color: grey;
+            }
+            &>ul{
+                max-height: 20rem;
+                max-width: 50%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            p{
+                margin-top: 2em;
+                color: grey;
+                a{
+                    color: blue;
+                }
+            }
+        }
+    }
+    .bottom{
+        padding: 1em 0;
+        background-color: rgb(65, 61, 61);
+        .container{
+            justify-content: space-between;
+            align-items: center;
+        }
+        button{
+            background-color: transparent;
+            border: 2px solid blue;
+            padding: .5em;
+            cursor: pointer;
+            color: white;
+            font-weight: 600;
+        }
+        .socials{
+            color: blue;
+            font-weight: 600;
+            align-items: center;
+            &>*{
+                margin: 0 .5em;
+            }
+        }
     }
 }

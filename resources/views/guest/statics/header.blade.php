@@ -11,8 +11,8 @@
             <img src="{{ asset('images/dc-logo.png')}}" alt="dc-logo" height="70">
         </a>
         <ul class="flex unstyled">
-            <li><a href="#">CHARACTERS</a></li>
-            <li class="active"><a href="#">COMICS</a></li>
+            <li class="{{ Route::currentRouteName() == 'characters' ? 'active' : '' }}"><a href="{{ route('characters') }}">CHARACTERS</a></li>
+            <li class="{{ Route::currentRouteName() == 'comics' ? 'active' : '' }}"><a href="{{ route('comics') }}">COMICS</a></li>
             <li><a href="#">MOVIES</a></li>
             <li><a href="#">TV</a></li>
             <li><a href="#">GAMES</a></li>
