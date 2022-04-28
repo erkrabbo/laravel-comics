@@ -10,6 +10,7 @@
     display: flex;
 }
 .header-nav{
+    font-weight: 600;
     justify-content: center;
     padding: .05em;
     img{
@@ -125,6 +126,7 @@ main{
         background-color: blue;
         color: white;
         font-weight: 600;
+        cursor: pointer;
     }
     .label{
         display: inline-block;
@@ -168,6 +170,7 @@ footer{
             ul{
                 list-style: none;
                 color: white;
+                padding-bottom: 1em;
             }
             a{
                 text-decoration: none;

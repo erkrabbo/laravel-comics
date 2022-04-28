@@ -10,6 +10,7 @@
 }
 
 .header-nav {
+  font-weight: 600;
   justify-content: center;
   padding: 0.05em;
 }
@@ -132,6 +133,7 @@ main button {
   background-color: blue;
   color: white;
   font-weight: 600;
+  cursor: pointer;
 }
 main .label {
   display: inline-block;
@@ -178,6 +180,7 @@ footer .top .container {
 footer .top .container ul {
   list-style: none;
   color: white;
+  padding-bottom: 1em;
 }
 footer .top .container a {
   text-decoration: none;
